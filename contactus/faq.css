@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.msc-agrotech-faq-banner {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+  }
+
+  .msc-agrotech-faq-banner-img-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .msc-agrotech-faq-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .msc-agrotech-faq-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+  }
+
+  .msc-agrotech-faq-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+
+  .msc-agrotech-faq-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 3px solid #00b6b6;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  .msc-agrotech-faq-breadcrumb {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #e0e0e0;
+  }
+
+  .msc-agrotech-faq-breadcrumb a {
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+
+  .msc-agrotech-faq-breadcrumb a:hover {
+    color: #00b6b6;
+    text-decoration: underline;
+  }
+
+  .msc-agrotech-faq-breadcrumb i {
+    margin-right: 5px;
+    color: #ffffff;
+  }
+
+    .msc-agrotech-faq-heading {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .msc-agrotech-faq-subheading {
+      text-align: center;
+      color: #6c757d;
+      margin-bottom: 2rem;
+    }
+
+    .msc-agrotech-faq-wrapper {
+      background-color: #f8f9fa;
+      padding: 2rem 1rem;
+      border-radius: 1rem;
+      margin: 2rem auto;
+      max-width: 900px;
+    }
+
+    .msc-agrotech-faq .accordion-button {
+      border-radius: 2rem !important;
+      background-color: #ffffff;
+      box-shadow: none;
+      font-weight: 500;
+    }
+
+    .msc-agrotech-faq .accordion-item {
+      border: none;
+      margin-bottom: 1rem;
+    }
+
+    .msc-agrotech-faq .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6l6 6 6-6'/%3E%3C/svg%3E");
+    }
+
+    .msc-agrotech-faq .accordion-button:not(.collapsed)::after {
+      transform: rotate(180deg);
+    }
+
+    /* contack faq */
+    .polyhouse-faq-form-container {
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        padding: 2rem;
+        height: 100%;
+      }
+  
+      .polyhouse-faq-form-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+  
+      .polyhouse-faq-form input,
+      .polyhouse-faq-form textarea {
+        border-radius: 1rem;
+        padding: 0.75rem 1rem;
+      }
+  
+      .polyhouse-faq-form button {
+        border-radius: 2rem;
+        padding: 0.5rem 2rem;
+        background-color: #5c9ead;
+        color: white;
+        border: none;
+      }
+  
+      .polyhouse-faq-map {
+        border-radius: 1rem;
+        border: none;
+        width: 100%;
+        flex-grow: 1;
+        height: 100%;
+        min-height: 100%;
+      }
+  
+      /* Make row children (columns) equal height */
+      .polyhouse-faq-equal-height {
+        display: flex;
+        flex-wrap: wrap;
+      }
+  
+      .polyhouse-faq-left,
+      .polyhouse-faq-right {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      /* Spacing fix for small screens */
+      @media (max-width: 768px) {
+        .polyhouse-faq-image-col {
+          margin-top: 2rem;
+        }
+  
+        .polyhouse-faq-equal-height {
+          display: block; /* Stack on mobile */
+        }
+      }

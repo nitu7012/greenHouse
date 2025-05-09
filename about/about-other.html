@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polyhouse Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .msc-agrotech-about {
+      background: url('./assets/img/poly2.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      color: white;
+    }
+
+    .msc-agrotech-about::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(7, 19, 7, 0.858); 
+      z-index: 0;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-subtitle {
+      letter-spacing: 2px;
+      font-weight: 600;
+      color: #aadbaa;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #ffffff;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-highlight {
+      color: #ffdf4f;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-blog-card {
+      max-width: 200px;
+      position: relative;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-badge-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-badge {
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 12px;
+      background-color: #2c662d;
+      color: white;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-avatars img {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #fff;
+      margin-right: -10px;
+    }
+
+    .msc-agrotech-about .msc-agrotech-about-btn i {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<section class="msc-agrotech-about py-5 text-white">
+  <div class="container msc-agrotech-about-container">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h6 class="msc-agrotech-about-subtitle">OUR STORY</h6>
+        <h2 class="msc-agrotech-about-title">
+          Empowering Farmers <span>with Innovation</span> for Better Yields <br>
+          Boost Growth & <span class="msc-agrotech-about-highlight">Sustain Polyhouse Farming</span>
+        </h2>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-end">
+        <div class="d-flex gap-3">
+          <div class="msc-agrotech-about-blog-card position-relative">
+            <img src="./assets/img/poly3.jpg" class="img-fluid rounded" alt="Tech Blog 1">
+            <div class="msc-agrotech-about-badge-container">
+              <span class="msc-agrotech-about-badge">Polyhouse</span>
+              <span class="msc-agrotech-about-badge">Technology</span>
+            </div>
+          </div>
+          <div class="msc-agrotech-about-blog-card position-relative">
+            <img src="./assets/img/poly1.jpg" class="img-fluid rounded" alt="Tech Blog 2">
+            <div class="msc-agrotech-about-badge-container">
+              <span class="msc-agrotech-about-badge">Farming</span>
+              <span class="msc-agrotech-about-badge">Trends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="./assets/img/team.jpg" class="img-fluid rounded" alt="Team Working">
+      </div>
+      <div class="col-lg-6">
+        <p class="mb-4">
+          We specialize in advanced polyhouse solutions that help you grow more with less. From climate-controlled farming structures to IoT-powered irrigation systems, our mission is to transform agriculture into a more efficient, profitable, and sustainable industry. Join hands with us to redefine your crop production potential.
+        </p>
+        <div class="row text-center mb-4">
+          <div class="col-6 col-md-3">
+            <h4>500+</h4>
+            <p class="small">Polyhouses Built</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h4>800+</h4>
+            <p class="small">Happy Farmers</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h4>15+</h4>
+            <p class="small">Years Experience</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h4>30+</h4>
+            <p class="small">Agro Awards</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="msc-agrotech-about-avatars">
+            <img src="./assets/img/user1.jpg" class="rounded-circle" alt="User 1">
+            <img src="./assets/img/user2.jpg" class="rounded-circle" alt="User 2">
+            <img src="./assets/img/user3.jpg" class="rounded-circle" alt="User 3">
+          </div>
+          <button class="btn btn-outline-light d-flex align-items-center gap-2 msc-agrotech-about-btn">
+            <i class="fas fa-play-circle"></i> WATCH INTRO
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

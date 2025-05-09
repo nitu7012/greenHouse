@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.msc-agrotech-services-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.msc-agrotech-services-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.msc-agrotech-services-card {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 -3px 0 red; /* Red top border outside */
+  }
+  
+
+.msc-agrotech-services-card img {
+    border-radius: 0.75rem;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    filter: brightness(0.7); /* Optional: Adjust brightness to enhance text visibility */
+}
+
+.msc-agrotech-services-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradient overlay */
+    z-index: 0;
+}
+
+.msc-agrotech-services-card-title {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    z-index: 1;
+    transition: opacity 0.6s ease; /* Slower fade-out transition */
+}
+
+.msc-agrotech-services-card-description {
+    position: absolute;
+    bottom: -100%; /* Hide the description initially */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+    z-index: 2;
+    transition: bottom 0.6s ease; 
+    border-radius: 20px 20px 0 0;
+}
+
+/* Hover Effects */
+.msc-agrotech-services-card:hover {
+    transform: translateY(-10px); /* Lift the card up on hover */
+    cursor: pointer;
+}
+
+.msc-agrotech-services-card:hover .msc-agrotech-services-card-description {
+    bottom: 0; 
+}
+
+.msc-agrotech-services-card:hover .msc-agrotech-services-card-title {
+    opacity: 0; 
+}
+
+.msc-agrotech-services-btn {
+    display: block;
+    text-align: center;
+    margin: 2rem auto 0;
+   
+  }
+  
+  .msc-agrotech-services-button {
+    color: white;
+    background-color: rgb(33, 58, 33);
+    border-radius: 10px;
+    padding: 8px 15px;
+  }
+  .msc-agrotech-services-button:hover{
+    color: white;
+    background-color: #0e1c0d;
+    transition: all 0.4s ease-in-out;
+  }
